@@ -1,0 +1,213 @@
+html,body{margin:0;padding:0;}
+
+#land{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #333;
+}
+#land header{
+	position: absolute;
+	top: 25px;
+	width: 100%;
+	text-align: center;
+	z-index: 3;
+}
+#land header h1{margin:0;}
+#land header h1 a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 45px;
+	font-family: 'Lobster',sans-serif;
+}
+
+#land nav{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: url(../images/p2.jpg) no-repeat center center fixed;
+}
+#land nav > div{
+	width: 25%;
+	height:100%;
+	float: left; 
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+#land nav > div span{
+	display: inline-block;
+	margin-top: 50%;
+	position: relative;
+	transition:.6s margin-top;
+	-webkit-transition:.6s margin-top;
+	z-index: 2;
+}
+#land nav > div:hover span{
+	margin-top: 45%;
+}
+#land nav > div span:before{
+	font-size: 35px;
+	color: #fff;
+}
+
+#land nav > div a{
+	opacity: 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 'Montserrat',sans-serif;
+	padding-top: 15px;
+	display: block;
+}
+#land nav > div:hover a{
+	opacity: 1;
+}
+
+#land nav > div > div.imgContainer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	opacity: 0;
+	transition:.6s opacity;
+	-webkit-transition:.6s opacity;
+	transition-delay:.4s;
+	-webkit-transition-delay:.4s;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#land nav > div:hover > div.imgContainer{
+	opacity: .35;
+}
+
+/*#land nav > div > div.imgContainer[anchor]{background: url(../images/p1.jpg) no-repeat center center fixed;}
+#land nav > div > div.imgContainer[cloud]{background: url(../images/p2.jpg) no-repeat center center fixed;}
+#land nav > div > div.imgContainer[box]{background: url(../images/p3.jpg) no-repeat center center fixed;}
+#land nav > div > div.imgContainer[shuffle]{background: url(../images/p4.jpg) no-repeat center center fixed;}*/
+
+
+/*---Articles*/
+#contents{}
+
+#contents article{
+	width: 100%;
+	min-height: 100%;
+	background: #333;
+	overflow: hidden;
+	position: relative;
+}
+#contents article .leftpanel{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+#contents article .leftpanel{
+	width: 25%;
+	height:100%;
+	float: left; 
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+#contents article .leftpanel span{
+	display: inline-block;
+	margin-top: 18%;
+	position: relative;
+	transition:.6s margin-top;
+	-webkit-transition:.6s margin-top;
+	z-index: 2;
+}
+#contents article .leftpanel:hover span{
+	margin-top: 20%;
+}
+#contents article .leftpanel span:before{
+	font-size: 55px;
+	color: #fff;
+}
+
+#contents article .leftpanel > div.imgContainer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	opacity: .35;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#contents article .leftpanel > div.imgContainer[anchor]{background: url(../images/p1.jpg) no-repeat center center fixed;}
+#contents article .leftpanel > div.imgContainer[cloud]{background: url(../images/p2.jpg) no-repeat center center fixed;}
+#contents article .leftpanel > div.imgContainer[box]{background: url(../images/p3.jpg) no-repeat center center fixed;}
+#contents article .leftpanel > div.imgContainer[shuffle]{background: url(../images/p4.jpg) no-repeat center center fixed;}
+
+
+
+#contents article content{
+	width: 75%;
+	overflow: hidden;
+	float: left;
+}
+#contents article content h2{
+	color:#fff;
+	font-family: 'Montserrat',sans-serif;
+	margin-left: 2.5%;
+}
+#contents article content p{
+	color:#fff;	
+	width: 80%;
+	font-family: Calibri,sans-serif;
+	font-size: 18px;
+	margin-left: 5%;
+}
+
+
+
+@media screen and (max-width: 768px){
+	#land nav > div{
+		width: 100%;
+		height:25%;
+		float: left; 
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+	}
+	#land nav > div span{
+		display: inline-block;
+		margin-top: 9.5%;
+		position: relative;
+		transition:.6s margin-top;
+		-webkit-transition:.6s margin-top;
+		z-index: 2;
+	}
+	#land nav > div:hover span{
+		margin-top: 9.5%;
+	}
+	#land nav > div:hover > div.imgContainer{
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
